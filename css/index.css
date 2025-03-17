@@ -12,7 +12,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    height: 100vh;
     font-size: 3rem;
 }
 
@@ -42,15 +42,18 @@ body{
     border-radius: 20px;
     padding: 15px;
     width: 500px;
-    border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    transition: ease 0.5s;
+}
+.login:hover, .reg:hover{
+    transform: scale(1.01);
 }
 
 .login button{
-    font-size: 1.5rem;
+    color: white;
     background-color: inherit;
 }
 
