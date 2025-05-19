@@ -1,20 +1,22 @@
-:root{
-    --text-color:#17BD3E;
+/* ---- alap beállítások ---- */
+:root {
+    --text-color: #17BD3E;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html{
+
+html {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: silver;
-
 }
 
-
-header{
+/* ---- a fejléc a menüvel ---- */
+header {
     background-color: white;
     padding: 1.25rem 1.875rem;
     display: flex;
@@ -22,105 +24,100 @@ header{
     align-items: center;
 }
 
-.menu-logo{
+/* logó bal oldalt */
+.menu-logo {
     font-size: 2rem;
     font-weight: 600;
     text-transform: uppercase;
     user-select: none;
 }
 
-.menu-logo-green{
-    color: var(--text-color)
+.menu-logo-green {
+    color: var(--text-color);
 }
 
-nav{
+/* menü ikonok jobb oldalt alapállapotban */
+nav {
     display: flex;
     gap: 2rem;
     font-size: 2rem;
-
 }
 
-nav a{
+nav a {
     text-decoration: none;
     color: black;
     width: 60px;
     height: 60px;
-    border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
     transition: ease 0.5s;
-
-
 }
 
-nav a:hover{
+nav a:hover {
     transform: scale(1.1);
 }
 
-.icon-home{
+.icon-home {
     background-color: silver;
-}
+} 
 
-.icon-logout{
+.icon-logout {
     background-color: red;
     color: white;
-
 }
 
-.hamburger-menu{
+/* hambuger menü */
+.hamburger-menu {
     background-color: white;
     width: 30px;
     height: 25px;
     cursor: pointer;
     user-select: none;
+    display: none;
     gap: 5px;
     flex-direction: column;
-    display: none;
-
 }
 
-.hamburger-menu span{
+.hamburger-menu span {
+    display: block;
     background-color: black;
     height: 4px;
     width: 100%;
-    display: block;
     border-radius: 2px;
-
 }
 
-.menu-toggle{
+.menu-toggle {
     display: none;
-
-}
-.menu-toggle:checked~nav{
-display: flex;
-
 }
 
-@media screen and (max-width: 768px){
- .hamburger-menu{
+.menu-toggle:checked~nav {
     display: flex;
- }
-
- nav{
-    flex-direction: row;
-    justify-content: space-around;
-    width: 100%;
-    background-color: white;
-    padding: 10px;
-    position: absolute;
-    top: 70px;
-    left: 0;
-    font-size: 1.5rem;
-    display: none;
-
- }
 }
-    
 
-.fixed{
+/* --- hamburger menü 768px-től --- */
+@media screen and (max-width: 768px) {
+    .hamburger-menu {
+        display: flex;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        background-color: white;
+        padding: 10px;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        font-size: 1.5rem;
+        display: none;
+    }
+}
+
+/* --- hozzáadás plus gomb ---  */
+.fixed {
     position: fixed;
     right: 30px;
     top: 70%;
@@ -136,7 +133,7 @@ display: flex;
     transition: ease 0.5s;
 }
 
-.fixed:hover{
+.fixed:hover {
     transform: scale(1.1);
 }
 
@@ -146,12 +143,12 @@ display: flex;
 }
 
 @media screen and (max-width: 768px) {
-    .fixed{
+    .fixed {
         width: 40px;
         height: 40px;
     }
+
     .fixed i {
         font-size: 2rem;
     }
-    
 }

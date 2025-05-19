@@ -1,1 +1,1 @@
-memeinvazio orai munka
+memeinvázió frontend kódjának fejlesztése

@@ -53,7 +53,7 @@ input {
     outline: none;
 }
 
-.login {
+.reg {
     background-color: var(--greenColor);
     width: 500px;
     border-radius: 20px;
@@ -65,11 +65,11 @@ input {
     transition: ease 0.5s;
 }
 
-.login:hover {
+.reg:hover {
     transform: scale(1.01);
 }
 
-.login button {
+.reg button {
     font-size: 1.5rem;
     color: white;
     background-color: inherit;

@@ -1,13 +1,14 @@
-:root{
+:root {
     --greenColor: #17BD3E;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: center;
@@ -16,7 +17,7 @@ body{
     font-size: 3rem;
 }
 
-.tarolo{
+.tarolo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,18 +25,18 @@ body{
     gap: 50px;
 }
 
-.focim{
+.focim {
     text-transform: uppercase;
     text-align: center;
     font-weight: 500;
     user-select: none;
 }
 
-.focim_zold{
+.focim_zold {
     color: var(--greenColor);
 }
 
-.input{
+.input {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,16 +45,15 @@ body{
     border-radius: 20px;
 }
 
-input{
-    font-size:1.5rem;
+input {
+    font-size: 1.5rem;
     padding: 10px 0;
-    width:90%;
+    width: 90%;
     border: none;
     outline: none;
-    
 }
 
-.reg{
+.login {
     background-color: var(--greenColor);
     width: 500px;
     border-radius: 20px;
@@ -63,14 +63,13 @@ input{
     justify-content: center;
     align-items: center;
     transition: ease 0.5s;
-
 }
 
-.reg:hover{
+.login:hover {
     transform: scale(1.01);
 }
 
-.reg button{
+.login button {
     font-size: 1.5rem;
     color: white;
     background-color: inherit;
@@ -78,9 +77,10 @@ input{
     cursor: inherit;
 }
 
-@media screen and (max-width:500px){
-    .reg, .input{
+@media screen and (max-width: 500px) {
+
+    .login,
+    .input {
         width: 340px;
     }
-    
 }
